@@ -1,0 +1,324 @@
+[
+  {
+    "id": "job-application",
+    "name": "Job Application Form",
+    "category": "HR",
+    "description": "Collect applicant details, work experience, skills, and portfolio links for job openings.",
+    "coverColor": "#1e3a5f",
+    "questionCount": 8,
+    "questions": [
+      { "type": "short_text", "title": "Full Name", "is_required": true, "order_index": 0, "placeholder": "e.g. Rahul Sharma", "description": null, "options": null, "settings": null },
+      { "type": "email", "title": "Email Address", "is_required": true, "order_index": 1, "placeholder": "rahul@example.com", "description": null, "options": null, "settings": null },
+      { "type": "phone", "title": "Mobile Number", "is_required": true, "order_index": 2, "placeholder": "+91 98765 43210", "description": null, "options": null, "settings": null },
+      { "type": "dropdown", "title": "Years of Experience", "is_required": true, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"0-1 years","value":"0-1"},{"id":"2","label":"1-3 years","value":"1-3"},{"id":"3","label":"3-5 years","value":"3-5"},{"id":"4","label":"5+ years","value":"5+"}], "settings": null },
+      { "type": "long_text", "title": "Tell us about yourself", "is_required": true, "order_index": 4, "placeholder": "Briefly describe your background and why you're a great fit...", "description": null, "options": null, "settings": null },
+      { "type": "checkboxes", "title": "Skills", "is_required": false, "order_index": 5, "placeholder": null, "description": "Select all that apply", "options": [{"id":"1","label":"JavaScript","value":"js"},{"id":"2","label":"Python","value":"python"},{"id":"3","label":"React","value":"react"},{"id":"4","label":"Node.js","value":"node"},{"id":"5","label":"SQL","value":"sql"}], "settings": null },
+      { "type": "short_text", "title": "Current Company / Last Company", "is_required": false, "order_index": 6, "placeholder": "e.g. Infosys, TCS", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "LinkedIn or Portfolio URL", "is_required": false, "order_index": 7, "placeholder": "https://linkedin.com/in/", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "employee-feedback",
+    "name": "Employee Feedback Survey",
+    "category": "HR",
+    "description": "Understand employee satisfaction, identify areas of improvement, and measure engagement.",
+    "coverColor": "#2d4a22",
+    "questionCount": 7,
+    "questions": [
+      { "type": "rating", "title": "Overall, how satisfied are you with your work?", "is_required": true, "order_index": 0, "placeholder": null, "description": "1 = Very Dissatisfied, 5 = Very Satisfied", "options": null, "settings": {"min": 1, "max": 5} },
+      { "type": "rating", "title": "How would you rate your work-life balance?", "is_required": true, "order_index": 1, "placeholder": null, "description": null, "options": null, "settings": {"min": 1, "max": 5} },
+      { "type": "multiple_choice", "title": "How likely are you to recommend this company to a friend?", "is_required": true, "order_index": 2, "placeholder": null, "description": null, "options": [{"id":"1","label":"Definitely would","value":"yes"},{"id":"2","label":"Probably would","value":"probably"},{"id":"3","label":"Not sure","value":"unsure"},{"id":"4","label":"Probably not","value":"no"}], "settings": null },
+      { "type": "checkboxes", "title": "Which areas need improvement?", "is_required": false, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Communication","value":"comm"},{"id":"2","label":"Compensation","value":"comp"},{"id":"3","label":"Growth opportunities","value":"growth"},{"id":"4","label":"Management","value":"mgmt"},{"id":"5","label":"Office environment","value":"office"}], "settings": null },
+      { "type": "long_text", "title": "What do you enjoy most about working here?", "is_required": false, "order_index": 4, "placeholder": "Share your thoughts...", "description": null, "options": null, "settings": null },
+      { "type": "long_text", "title": "What improvements would make the biggest difference?", "is_required": false, "order_index": 5, "placeholder": "Your suggestions...", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "Department (optional)", "is_required": false, "order_index": 6, "placeholder": "e.g. Engineering, Sales", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "customer-satisfaction",
+    "name": "Customer Satisfaction Survey",
+    "category": "Business",
+    "description": "Measure CSAT scores and collect actionable customer feedback for your product or service.",
+    "coverColor": "#5c3914",
+    "questionCount": 6,
+    "questions": [
+      { "type": "rating", "title": "How satisfied are you with our service?", "is_required": true, "order_index": 0, "placeholder": null, "description": "1 = Very Dissatisfied, 5 = Very Satisfied", "options": null, "settings": {"min": 1, "max": 5} },
+      { "type": "multiple_choice", "title": "How did you hear about us?", "is_required": false, "order_index": 1, "placeholder": null, "description": null, "options": [{"id":"1","label":"Google Search","value":"google"},{"id":"2","label":"Social Media","value":"social"},{"id":"3","label":"Friend/Family","value":"referral"},{"id":"4","label":"Advertisement","value":"ad"}], "settings": null },
+      { "type": "rating", "title": "How likely are you to recommend us? (NPS)", "is_required": true, "order_index": 2, "placeholder": null, "description": "1 = Not at all likely, 10 = Extremely likely", "options": null, "settings": {"min": 1, "max": 10} },
+      { "type": "checkboxes", "title": "What did you like about us?", "is_required": false, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Quality","value":"quality"},{"id":"2","label":"Price","value":"price"},{"id":"3","label":"Customer support","value":"support"},{"id":"4","label":"Fast delivery","value":"delivery"},{"id":"5","label":"Website experience","value":"website"}], "settings": null },
+      { "type": "long_text", "title": "Any feedback or suggestions?", "is_required": false, "order_index": 4, "placeholder": "Tell us what we can do better...", "description": null, "options": null, "settings": null },
+      { "type": "email", "title": "Email (optional, for follow-up)", "is_required": false, "order_index": 5, "placeholder": "you@example.com", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "event-registration",
+    "name": "Event Registration Form",
+    "category": "Events",
+    "description": "Register attendees for conferences, webinars, workshops, or any event with ease.",
+    "coverColor": "#3b1f5e",
+    "questionCount": 8,
+    "questions": [
+      { "type": "short_text", "title": "Full Name", "is_required": true, "order_index": 0, "placeholder": "Your full name", "description": null, "options": null, "settings": null },
+      { "type": "email", "title": "Email Address", "is_required": true, "order_index": 1, "placeholder": "your@email.com", "description": "Event confirmation will be sent here", "options": null, "settings": null },
+      { "type": "phone", "title": "Contact Number", "is_required": true, "order_index": 2, "placeholder": "+91 ", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "Organization / Company", "is_required": false, "order_index": 3, "placeholder": "Where do you work?", "description": null, "options": null, "settings": null },
+      { "type": "dropdown", "title": "Ticket Type", "is_required": true, "order_index": 4, "placeholder": null, "description": null, "options": [{"id":"1","label":"Free Pass","value":"free"},{"id":"2","label":"Standard (₹999)","value":"standard"},{"id":"3","label":"VIP (₹2999)","value":"vip"}], "settings": null },
+      { "type": "multiple_choice", "title": "How did you hear about this event?", "is_required": false, "order_index": 5, "placeholder": null, "description": null, "options": [{"id":"1","label":"Social Media","value":"social"},{"id":"2","label":"Email Newsletter","value":"email"},{"id":"3","label":"Friend","value":"friend"},{"id":"4","label":"Organizer's website","value":"website"}], "settings": null },
+      { "type": "checkboxes", "title": "Sessions you want to attend", "is_required": false, "order_index": 6, "placeholder": null, "description": null, "options": [{"id":"1","label":"Opening Keynote","value":"keynote"},{"id":"2","label":"Workshop A","value":"ws_a"},{"id":"3","label":"Workshop B","value":"ws_b"},{"id":"4","label":"Panel Discussion","value":"panel"},{"id":"5","label":"Networking Dinner","value":"dinner"}], "settings": null },
+      { "type": "long_text", "title": "Any dietary requirements or special requests?", "is_required": false, "order_index": 7, "placeholder": "e.g. Vegetarian, wheelchair access...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "wedding-rsvp",
+    "name": "Wedding RSVP",
+    "category": "Events",
+    "description": "Collect RSVPs from wedding guests including meal preferences and attendance details.",
+    "coverColor": "#7c1d3f",
+    "questionCount": 7,
+    "questions": [
+      { "type": "short_text", "title": "Your Name(s)", "is_required": true, "order_index": 0, "placeholder": "e.g. Priya & Rahul Sharma", "description": null, "options": null, "settings": null },
+      { "type": "multiple_choice", "title": "Will you be attending?", "is_required": true, "order_index": 1, "placeholder": null, "description": null, "options": [{"id":"1","label":"Joyfully Accepts 🎉","value":"yes"},{"id":"2","label":"Regretfully Declines","value":"no"}], "settings": null },
+      { "type": "number", "title": "Number of guests attending (including yourself)", "is_required": true, "order_index": 2, "placeholder": "e.g. 2", "description": null, "options": null, "settings": null },
+      { "type": "checkboxes", "title": "Events attending", "is_required": false, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Haldi Ceremony","value":"haldi"},{"id":"2","label":"Mehendi","value":"mehendi"},{"id":"3","label":"Sangeet","value":"sangeet"},{"id":"4","label":"Wedding Reception","value":"reception"}], "settings": null },
+      { "type": "dropdown", "title": "Meal Preference", "is_required": false, "order_index": 4, "placeholder": null, "description": null, "options": [{"id":"1","label":"Vegetarian","value":"veg"},{"id":"2","label":"Non-Vegetarian","value":"non-veg"},{"id":"3","label":"Jain","value":"jain"},{"id":"4","label":"No preference","value":"none"}], "settings": null },
+      { "type": "multiple_choice", "title": "Will you need accommodation?", "is_required": false, "order_index": 5, "placeholder": null, "description": null, "options": [{"id":"1","label":"Yes, please assist","value":"yes"},{"id":"2","label":"No, I have my own arrangements","value":"no"}], "settings": null },
+      { "type": "long_text", "title": "Message for the couple 💍", "is_required": false, "order_index": 6, "placeholder": "Share your wishes and blessings...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "college-admission",
+    "name": "College Admission Enquiry",
+    "category": "Education",
+    "description": "Gather student enquiries for college admissions with academic background and course preferences.",
+    "coverColor": "#1a3a5c",
+    "questionCount": 8,
+    "questions": [
+      { "type": "short_text", "title": "Student's Full Name", "is_required": true, "order_index": 0, "placeholder": "As per certificate", "description": null, "options": null, "settings": null },
+      { "type": "phone", "title": "Parent/Guardian Mobile Number", "is_required": true, "order_index": 1, "placeholder": "+91 ", "description": null, "options": null, "settings": null },
+      { "type": "email", "title": "Email Address", "is_required": true, "order_index": 2, "placeholder": "student@email.com", "description": null, "options": null, "settings": null },
+      { "type": "dropdown", "title": "Class / Grade Applying For", "is_required": true, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Class 11","value":"xi"},{"id":"2","label":"Class 12","value":"xii"},{"id":"3","label":"B.Tech","value":"btech"},{"id":"4","label":"MBA","value":"mba"},{"id":"5","label":"Other","value":"other"}], "settings": null },
+      { "type": "checkboxes", "title": "Preferred stream/subjects", "is_required": false, "order_index": 4, "placeholder": null, "description": null, "options": [{"id":"1","label":"Science (PCM)","value":"pcm"},{"id":"2","label":"Science (PCB)","value":"pcb"},{"id":"3","label":"Commerce","value":"commerce"},{"id":"4","label":"Arts/Humanities","value":"arts"},{"id":"5","label":"Computer Science","value":"cs"}], "settings": null },
+      { "type": "number", "title": "Class 10 / Last Exam Percentage", "is_required": false, "order_index": 5, "placeholder": "e.g. 85", "description": null, "options": null, "settings": null },
+      { "type": "multiple_choice", "title": "How did you hear about us?", "is_required": false, "order_index": 6, "placeholder": null, "description": null, "options": [{"id":"1","label":"Newspaper","value":"newspaper"},{"id":"2","label":"Friend/Family","value":"referral"},{"id":"3","label":"Social Media","value":"social"},{"id":"4","label":"Justdial","value":"justdial"}], "settings": null },
+      { "type": "long_text", "title": "Any questions or special requirements?", "is_required": false, "order_index": 7, "placeholder": "Ask us anything...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "student-feedback",
+    "name": "Student Course Feedback",
+    "category": "Education",
+    "description": "Collect student feedback about course quality, teaching, and overall learning experience.",
+    "coverColor": "#2a4a3a",
+    "questionCount": 7,
+    "questions": [
+      { "type": "short_text", "title": "Course / Subject Name", "is_required": true, "order_index": 0, "placeholder": "e.g. Mathematics", "description": null, "options": null, "settings": null },
+      { "type": "rating", "title": "Rate the course content quality", "is_required": true, "order_index": 1, "placeholder": null, "description": null, "options": null, "settings": {"min":1,"max":5} },
+      { "type": "rating", "title": "Rate the teaching quality", "is_required": true, "order_index": 2, "placeholder": null, "description": null, "options": null, "settings": {"min":1,"max":5} },
+      { "type": "multiple_choice", "title": "Was the coursework load manageable?", "is_required": true, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Very manageable","value":"easy"},{"id":"2","label":"Just right","value":"ok"},{"id":"3","label":"Slightly heavy","value":"heavy"},{"id":"4","label":"Too much","value":"too_much"}], "settings": null },
+      { "type": "checkboxes", "title": "What helped you learn best?", "is_required": false, "order_index": 4, "placeholder": null, "description": null, "options": [{"id":"1","label":"Lectures","value":"lectures"},{"id":"2","label":"Practical sessions","value":"practical"},{"id":"3","label":"Study materials","value":"materials"},{"id":"4","label":"Group discussions","value":"group"},{"id":"5","label":"Online resources","value":"online"}], "settings": null },
+      { "type": "long_text", "title": "What did you like most about this course?", "is_required": false, "order_index": 5, "placeholder": "Your feedback...", "description": null, "options": null, "settings": null },
+      { "type": "long_text", "title": "Suggestions for improvement", "is_required": false, "order_index": 6, "placeholder": "How can we make it better?", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "medical-history",
+    "name": "Patient Medical History",
+    "category": "Healthcare",
+    "description": "Collect pre-visit patient health history, allergies, medications, and medical conditions.",
+    "coverColor": "#1a4a4f",
+    "questionCount": 8,
+    "questions": [
+      { "type": "short_text", "title": "Patient Full Name", "is_required": true, "order_index": 0, "placeholder": "Legal name as per Aadhaar", "description": null, "options": null, "settings": null },
+      { "type": "date", "title": "Date of Birth", "is_required": true, "order_index": 1, "placeholder": null, "description": null, "options": null, "settings": null },
+      { "type": "multiple_choice", "title": "Gender", "is_required": true, "order_index": 2, "placeholder": null, "description": null, "options": [{"id":"1","label":"Male","value":"male"},{"id":"2","label":"Female","value":"female"},{"id":"3","label":"Other","value":"other"},{"id":"4","label":"Prefer not to say","value":"unspecified"}], "settings": null },
+      { "type": "phone", "title": "Emergency Contact Number", "is_required": true, "order_index": 3, "placeholder": "+91 ", "description": "Family member or close friend", "options": null, "settings": null },
+      { "type": "checkboxes", "title": "Do you have any of the following conditions?", "is_required": false, "order_index": 4, "placeholder": null, "description": "Select all that apply", "options": [{"id":"1","label":"Diabetes","value":"diabetes"},{"id":"2","label":"Hypertension","value":"hypertension"},{"id":"3","label":"Heart Disease","value":"heart"},{"id":"4","label":"Asthma","value":"asthma"},{"id":"5","label":"Thyroid disorder","value":"thyroid"},{"id":"6","label":"None","value":"none"}], "settings": null },
+      { "type": "long_text", "title": "Current Medications", "is_required": false, "order_index": 5, "placeholder": "List any medications you're currently taking...", "description": null, "options": null, "settings": null },
+      { "type": "long_text", "title": "Known Allergies", "is_required": false, "order_index": 6, "placeholder": "Medications, food, or other allergies...", "description": null, "options": null, "settings": null },
+      { "type": "long_text", "title": "Reason for visit / Current symptoms", "is_required": true, "order_index": 7, "placeholder": "Describe your symptoms...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "contact-us",
+    "name": "Contact Us Form",
+    "category": "Business",
+    "description": "Simple and clean contact form for websites to capture leads and enquiries.",
+    "coverColor": "#1f3a5c",
+    "questionCount": 5,
+    "questions": [
+      { "type": "short_text", "title": "Your Name", "is_required": true, "order_index": 0, "placeholder": "e.g. Priya Mehta", "description": null, "options": null, "settings": null },
+      { "type": "email", "title": "Email Address", "is_required": true, "order_index": 1, "placeholder": "you@company.com", "description": null, "options": null, "settings": null },
+      { "type": "phone", "title": "Phone Number", "is_required": false, "order_index": 2, "placeholder": "+91 ", "description": null, "options": null, "settings": null },
+      { "type": "dropdown", "title": "What is your enquiry about?", "is_required": true, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"General Enquiry","value":"general"},{"id":"2","label":"Sales","value":"sales"},{"id":"3","label":"Support","value":"support"},{"id":"4","label":"Partnership","value":"partnership"},{"id":"5","label":"Other","value":"other"}], "settings": null },
+      { "type": "long_text", "title": "Your Message", "is_required": true, "order_index": 4, "placeholder": "How can we help you?", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "workshop-registration",
+    "name": "Workshop Registration",
+    "category": "Events",
+    "description": "Register participants for skill-based workshops, training sessions, or boot camps.",
+    "coverColor": "#3a2a5e",
+    "questionCount": 7,
+    "questions": [
+      { "type": "short_text", "title": "Full Name", "is_required": true, "order_index": 0, "placeholder": "Your name", "description": null, "options": null, "settings": null },
+      { "type": "email", "title": "Email", "is_required": true, "order_index": 1, "placeholder": "you@email.com", "description": null, "options": null, "settings": null },
+      { "type": "phone", "title": "Phone Number", "is_required": true, "order_index": 2, "placeholder": "+91 ", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "Profession / Designation", "is_required": false, "order_index": 3, "placeholder": "e.g. Software Developer", "description": null, "options": null, "settings": null },
+      { "type": "multiple_choice", "title": "Experience Level", "is_required": true, "order_index": 4, "placeholder": null, "description": null, "options": [{"id":"1","label":"Beginner","value":"beginner"},{"id":"2","label":"Intermediate","value":"intermediate"},{"id":"3","label":"Advanced","value":"advanced"}], "settings": null },
+      { "type": "multiple_choice", "title": "Will you need a certificate of participation?", "is_required": false, "order_index": 5, "placeholder": null, "description": null, "options": [{"id":"1","label":"Yes","value":"yes"},{"id":"2","label":"No","value":"no"}], "settings": null },
+      { "type": "long_text", "title": "What do you hope to learn?", "is_required": false, "order_index": 6, "placeholder": "Your learning goals...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "internship-application",
+    "name": "Internship Application",
+    "category": "HR",
+    "description": "Collect applications from students seeking internship opportunities at your company.",
+    "coverColor": "#0a3d2e",
+    "questionCount": 7,
+    "questions": [
+      { "type": "short_text", "title": "Full Name", "is_required": true, "order_index": 0, "placeholder": "Your full name", "description": null, "options": null, "settings": null },
+      { "type": "email", "title": "College Email Address", "is_required": true, "order_index": 1, "placeholder": "you@college.edu.in", "description": null, "options": null, "settings": null },
+      { "type": "phone", "title": "Mobile Number", "is_required": true, "order_index": 2, "placeholder": "+91 ", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "College / University Name", "is_required": true, "order_index": 3, "placeholder": "e.g. IIT Bombay", "description": null, "options": null, "settings": null },
+      { "type": "dropdown", "title": "Current Year of Study", "is_required": true, "order_index": 4, "placeholder": null, "description": null, "options": [{"id":"1","label":"1st Year","value":"1"},{"id":"2","label":"2nd Year","value":"2"},{"id":"3","label":"3rd Year","value":"3"},{"id":"4","label":"Final Year","value":"4"},{"id":"5","label":"Post Graduate","value":"pg"}], "settings": null },
+      { "type": "checkboxes", "title": "Skills", "is_required": false, "order_index": 5, "placeholder": null, "description": null, "options": [{"id":"1","label":"Python","value":"python"},{"id":"2","label":"Java","value":"java"},{"id":"3","label":"React","value":"react"},{"id":"4","label":"Figma/UI Design","value":"design"},{"id":"5","label":"Data Analysis","value":"data"}], "settings": null },
+      { "type": "long_text", "title": "Why do you want to intern with us?", "is_required": true, "order_index": 6, "placeholder": "Tell us about your motivation and what you bring...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "product-feedback",
+    "name": "Product Feedback Form",
+    "category": "Business",
+    "description": "Get actionable feedback from users about your product's features, usability, and improvements.",
+    "coverColor": "#4a3000",
+    "questionCount": 6,
+    "questions": [
+      { "type": "short_text", "title": "Product / Feature Name", "is_required": true, "order_index": 0, "placeholder": "Which product are you reviewing?", "description": null, "options": null, "settings": null },
+      { "type": "rating", "title": "Overall product rating", "is_required": true, "order_index": 1, "placeholder": null, "description": null, "options": null, "settings": {"min":1,"max":5} },
+      { "type": "multiple_choice", "title": "How easy is the product to use?", "is_required": true, "order_index": 2, "placeholder": null, "description": null, "options": [{"id":"1","label":"Very easy","value":"easy"},{"id":"2","label":"Easy","value":"ok"},{"id":"3","label":"Neutral","value":"neutral"},{"id":"4","label":"Difficult","value":"hard"},{"id":"5","label":"Very difficult","value":"very_hard"}], "settings": null },
+      { "type": "checkboxes", "title": "Which features do you use most?", "is_required": false, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Feature A","value":"a"},{"id":"2","label":"Feature B","value":"b"},{"id":"3","label":"Feature C","value":"c"},{"id":"4","label":"Feature D","value":"d"}], "settings": null },
+      { "type": "long_text", "title": "What is the biggest problem you face?", "is_required": false, "order_index": 4, "placeholder": "Describe your pain points...", "description": null, "options": null, "settings": null },
+      { "type": "long_text", "title": "What feature would you most like to see added?", "is_required": false, "order_index": 5, "placeholder": "Your ideas...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "general-survey",
+    "name": "General Survey",
+    "category": "Feedback",
+    "description": "A versatile general-purpose survey template that can be customized for any feedback need.",
+    "coverColor": "#1e1e3a",
+    "questionCount": 6,
+    "questions": [
+      { "type": "short_text", "title": "Name (optional)", "is_required": false, "order_index": 0, "placeholder": "Your name", "description": null, "options": null, "settings": null },
+      { "type": "multiple_choice", "title": "How would you rate your overall experience?", "is_required": true, "order_index": 1, "placeholder": null, "description": null, "options": [{"id":"1","label":"Excellent","value":"5"},{"id":"2","label":"Good","value":"4"},{"id":"3","label":"Average","value":"3"},{"id":"4","label":"Poor","value":"2"},{"id":"5","label":"Very Poor","value":"1"}], "settings": null },
+      { "type": "rating", "title": "Rate us on a scale of 1-5", "is_required": true, "order_index": 2, "placeholder": null, "description": null, "options": null, "settings": {"min":1,"max":5} },
+      { "type": "checkboxes", "title": "What aspects were satisfactory?", "is_required": false, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Quality","value":"quality"},{"id":"2","label":"Speed","value":"speed"},{"id":"3","label":"Support","value":"support"},{"id":"4","label":"Value for money","value":"value"}], "settings": null },
+      { "type": "long_text", "title": "What went well?", "is_required": false, "order_index": 4, "placeholder": "Share the positives...", "description": null, "options": null, "settings": null },
+      { "type": "long_text", "title": "What could be improved?", "is_required": false, "order_index": 5, "placeholder": "Constructive feedback...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "complaint-form",
+    "name": "Complaint & Grievance Form",
+    "category": "Government",
+    "description": "Allow citizens or customers to submit formal complaints with all necessary documentation.",
+    "coverColor": "#3a1a1a",
+    "questionCount": 7,
+    "questions": [
+      { "type": "short_text", "title": "Complainant's Full Name", "is_required": true, "order_index": 0, "placeholder": "As per ID proof", "description": null, "options": null, "settings": null },
+      { "type": "phone", "title": "Mobile Number", "is_required": true, "order_index": 1, "placeholder": "+91 ", "description": null, "options": null, "settings": null },
+      { "type": "email", "title": "Email Address", "is_required": false, "order_index": 2, "placeholder": "for correspondence", "description": null, "options": null, "settings": null },
+      { "type": "dropdown", "title": "Nature of Complaint", "is_required": true, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Service Quality","value":"service"},{"id":"2","label":"Staff Behavior","value":"staff"},{"id":"3","label":"Billing / Payment","value":"billing"},{"id":"4","label":"Delay in Service","value":"delay"},{"id":"5","label":"Other","value":"other"}], "settings": null },
+      { "type": "long_text", "title": "Describe your complaint in detail", "is_required": true, "order_index": 4, "placeholder": "Please include dates, locations, and any relevant details...", "description": null, "options": null, "settings": null },
+      { "type": "date", "title": "Date of Incident", "is_required": true, "order_index": 5, "placeholder": null, "description": null, "options": null, "settings": null },
+      { "type": "file_upload", "title": "Supporting Documents (optional)", "is_required": false, "order_index": 6, "placeholder": null, "description": "Upload photos, receipts, or other evidence", "options": null, "settings": {"accept":".pdf,.jpg,.png,.jpeg"} }
+    ]
+  },
+  {
+    "id": "school-parent-feedback",
+    "name": "Parent-Teacher Feedback",
+    "category": "Education",
+    "description": "Collect feedback from parents about school activities, communication, and academic progress.",
+    "coverColor": "#1a3040",
+    "questionCount": 6,
+    "questions": [
+      { "type": "short_text", "title": "Parent / Guardian Name", "is_required": true, "order_index": 0, "placeholder": "Your name", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "Child's Name & Class", "is_required": true, "order_index": 1, "placeholder": "e.g. Arjun Sharma, Class 5A", "description": null, "options": null, "settings": null },
+      { "type": "rating", "title": "Overall satisfaction with the school", "is_required": true, "order_index": 2, "placeholder": null, "description": null, "options": null, "settings": {"min":1,"max":5} },
+      { "type": "checkboxes", "title": "Areas where you feel the school excels", "is_required": false, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Academic quality","value":"academic"},{"id":"2","label":"Sports & extracurriculars","value":"sports"},{"id":"3","label":"Teacher communication","value":"teacher"},{"id":"4","label":"Safety & facilities","value":"safety"},{"id":"5","label":"Overall environment","value":"env"}], "settings": null },
+      { "type": "long_text", "title": "What are you most satisfied with?", "is_required": false, "order_index": 4, "placeholder": "Your feedback...", "description": null, "options": null, "settings": null },
+      { "type": "long_text", "title": "What improvements would you suggest?", "is_required": false, "order_index": 5, "placeholder": "Your suggestions...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "marriage-biodata",
+    "name": "Marriage Biodata Form",
+    "category": "Personal",
+    "description": "Create a comprehensive matrimonial biodata form for sharing with families.",
+    "coverColor": "#5c1a3a",
+    "questionCount": 10,
+    "questions": [
+      { "type": "short_text", "title": "Full Name", "is_required": true, "order_index": 0, "placeholder": "As per birth certificate", "description": null, "options": null, "settings": null },
+      { "type": "date", "title": "Date of Birth", "is_required": true, "order_index": 1, "placeholder": null, "description": null, "options": null, "settings": null },
+      { "type": "multiple_choice", "title": "Gender", "is_required": true, "order_index": 2, "placeholder": null, "description": null, "options": [{"id":"1","label":"Male","value":"male"},{"id":"2","label":"Female","value":"female"}], "settings": null },
+      { "type": "dropdown", "title": "Religion / Community", "is_required": false, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Hindu","value":"hindu"},{"id":"2","label":"Muslim","value":"muslim"},{"id":"3","label":"Christian","value":"christian"},{"id":"4","label":"Sikh","value":"sikh"},{"id":"5","label":"Other","value":"other"}], "settings": null },
+      { "type": "short_text", "title": "Gotra / Sub-caste (optional)", "is_required": false, "order_index": 4, "placeholder": "If applicable", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "Educational Qualification", "is_required": true, "order_index": 5, "placeholder": "e.g. B.Tech, MBA", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "Current Profession / Job", "is_required": true, "order_index": 6, "placeholder": "e.g. Software Engineer at TCS", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "City & State", "is_required": true, "order_index": 7, "placeholder": "e.g. Mumbai, Maharashtra", "description": null, "options": null, "settings": null },
+      { "type": "phone", "title": "Family Contact Number", "is_required": true, "order_index": 8, "placeholder": "+91 ", "description": null, "options": null, "settings": null },
+      { "type": "long_text", "title": "About Me / Family Background", "is_required": false, "order_index": 9, "placeholder": "Brief description about yourself and your family...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "festival-invite",
+    "name": "Festival Celebration Invite",
+    "category": "Events",
+    "description": "Invite guests to Diwali, Holi, Navratri, Eid, or Christmas celebrations and RSVP tracking.",
+    "coverColor": "#5c3a00",
+    "questionCount": 5,
+    "questions": [
+      { "type": "short_text", "title": "Your Name", "is_required": true, "order_index": 0, "placeholder": "e.g. Ananya Patel", "description": null, "options": null, "settings": null },
+      { "type": "number", "title": "Number of guests (including yourself)", "is_required": true, "order_index": 1, "placeholder": "e.g. 2", "description": null, "options": null, "settings": null },
+      { "type": "multiple_choice", "title": "Will you be attending?", "is_required": true, "order_index": 2, "placeholder": null, "description": null, "options": [{"id":"1","label":"Yes, definitely! 🎉","value":"yes"},{"id":"2","label":"Maybe","value":"maybe"},{"id":"3","label":"No, sorry 😢","value":"no"}], "settings": null },
+      { "type": "dropdown", "title": "Meal preference", "is_required": false, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Vegetarian","value":"veg"},{"id":"2","label":"Non-Vegetarian","value":"non-veg"},{"id":"3","label":"Jain","value":"jain"}], "settings": null },
+      { "type": "long_text", "title": "Special message / wishes", "is_required": false, "order_index": 4, "placeholder": "Share your festival wishes...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "shop-order",
+    "name": "Shop Order Form",
+    "category": "Business",
+    "description": "Collect orders for a small business — perfect for home bakeries, saree shops, gift stores, etc.",
+    "coverColor": "#1a3a1a",
+    "questionCount": 7,
+    "questions": [
+      { "type": "short_text", "title": "Customer Name", "is_required": true, "order_index": 0, "placeholder": "Your full name", "description": null, "options": null, "settings": null },
+      { "type": "phone", "title": "WhatsApp Number", "is_required": true, "order_index": 1, "placeholder": "+91 ", "description": "We'll send order updates on WhatsApp", "options": null, "settings": null },
+      { "type": "long_text", "title": "What would you like to order?", "is_required": true, "order_index": 2, "placeholder": "List the items with quantities...", "description": null, "options": null, "settings": null },
+      { "type": "dropdown", "title": "Delivery or Pickup?", "is_required": true, "order_index": 3, "placeholder": null, "description": null, "options": [{"id":"1","label":"Home Delivery","value":"delivery"},{"id":"2","label":"Store Pickup","value":"pickup"}], "settings": null },
+      { "type": "long_text", "title": "Delivery Address (if applicable)", "is_required": false, "order_index": 4, "placeholder": "Full address with pincode...", "description": null, "options": null, "settings": null },
+      { "type": "dropdown", "title": "Preferred Payment Method", "is_required": true, "order_index": 5, "placeholder": null, "description": null, "options": [{"id":"1","label":"UPI / GPay","value":"upi"},{"id":"2","label":"Cash on Delivery","value":"cod"},{"id":"3","label":"Bank Transfer","value":"bank"},{"id":"4","label":"Card","value":"card"}], "settings": null },
+      { "type": "long_text", "title": "Special instructions", "is_required": false, "order_index": 6, "placeholder": "Any customizations or notes...", "description": null, "options": null, "settings": null }
+    ]
+  },
+  {
+    "id": "voter-registration-helper",
+    "name": "Voter Registration Helper",
+    "category": "Government",
+    "description": "Help citizens collect the necessary information for voter registration assistance.",
+    "coverColor": "#1a2a5c",
+    "questionCount": 7,
+    "questions": [
+      { "type": "short_text", "title": "Full Name (as per Aadhaar)", "is_required": true, "order_index": 0, "placeholder": "Legal name", "description": null, "options": null, "settings": null },
+      { "type": "date", "title": "Date of Birth", "is_required": true, "order_index": 1, "placeholder": null, "description": "Must be 18+ to vote", "options": null, "settings": null },
+      { "type": "multiple_choice", "title": "Gender", "is_required": true, "order_index": 2, "placeholder": null, "description": null, "options": [{"id":"1","label":"Male","value":"male"},{"id":"2","label":"Female","value":"female"},{"id":"3","label":"Third Gender","value":"other"}], "settings": null },
+      { "type": "long_text", "title": "Residential Address", "is_required": true, "order_index": 3, "placeholder": "Full address with pincode and state...", "description": null, "options": null, "settings": null },
+      { "type": "short_text", "title": "Aadhaar Number (last 4 digits)", "is_required": false, "order_index": 4, "placeholder": "XXXX", "description": "For verification purposes only", "options": null, "settings": null },
+      { "type": "phone", "title": "Mobile Number", "is_required": true, "order_index": 5, "placeholder": "+91 ", "description": null, "options": null, "settings": null },
+      { "type": "multiple_choice", "title": "Do you have an existing Voter ID?", "is_required": true, "order_index": 6, "placeholder": null, "description": null, "options": [{"id":"1","label":"Yes, updating details","value":"update"},{"id":"2","label":"No, first time registration","value":"new"}], "settings": null }
+    ]
+  }
+]
